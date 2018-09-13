@@ -5,11 +5,11 @@ This very small module provides a higher-order function `cachify` that adds cach
 ## Quick start
 
 ```sh
-npm install lru-cachify
+npm install lru-cachify2
 ```
 
 ```javascript
-import { cachify } from 'lru-cachify'
+import { cachify } from 'lru-cachify2'
 
 // the assumption is that, given the same id, this async function will return the same results forever (or some time at least)
 const basicRequest = id => fetch(`someUrl?id=${id}`).then(res => res.json())

@@ -1,5 +1,5 @@
 {
-  "name": "lru-cachify",
+  "name": "lru-cachify2",
   "version": "1.0.0",
   "description": "Add LRU caching behavior to any async function with a higher-order function",
   "repository": {
