@@ -1,0 +1,31 @@
+{
+  "name": "lru-cachify",
+  "version": "1.0.0",
+  "description": "Add LRU caching behavior to any async function with a higher-order function",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Touffy/lru-cachify.git"
+  },
+  "main": "cachify.js",
+  "dependencies": {
+    "lru-cache": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/lru-cache": "^4.1.1",
+    "jest": "^23.6.0",
+    "typescript": "^3.0.3",
+    "uglify-es": "^3.3.9"
+  },
+  "scripts": {
+    "start": "tsc && npm run uglify",
+    "uglify": "uglifyjs cachify.js -o cachify.min.js -cm --ecma 7",
+    "test": "tsc && jest"
+  },
+  "keywords": [
+    "cache",
+    "hoc",
+    "lru"
+  ],
+  "author": "David Junger <tffy@free.fr>",
+  "license": "MIT"
+}

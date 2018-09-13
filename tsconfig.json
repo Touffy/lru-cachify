@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./",
+    "baseUrl": "src",
+    "sourceMap": false,
+    "declaration": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es2017"
+  },
+  "files": [
+    "src/cachify.ts"
+  ]
+}
