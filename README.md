@@ -54,10 +54,10 @@ Now we can create a cached version of *l10n*:
 const cachedL10n = cachify(l10n, {}, hash)
 ```
 
-That's a very frequent use case, so lru-cachify comes with a `joinN` function. This is strictly equivalent to our `hash` function:
+That's a very frequent use case, so lru-cachify2 comes with a `joinN` function. This is strictly equivalent to our `hash` function:
 
 ```javascript
-import { joinN } from 'lru-cachify'
+import { joinN } from 'lru-cachify2'
 const hash = joinN(2)
 ```
 
@@ -103,7 +103,7 @@ const cachedRequest = cachify(basicRequest, {}, id => id, error => {
 
 ## Does it work everywhere?
 
-Like its dependency lru-cache, lru-cachify relies on es2015 features (`Map`s) that are difficult to polyfill, but nobody uses browsers or Node versions that don't have es2015 support anymore, right?
+Like its dependency lru-cache, lru-cachify2 relies on es2015 features (`Map`s) that are difficult to polyfill, but nobody uses browsers or Node versions that don't have es2015 support anymore, right?
 
 The TypeScript compiler is configured to output a commonJS module requiring es2017 support. Feel free to tweak that or just import the single-file source into your project and use your own transpiler configuration. `cachify` should easily transpile down to es2015.
 
